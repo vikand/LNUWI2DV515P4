@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F82A75A0-6465-4306-B7E1-6FD4D8BB2858}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WebScraping.Cmd</RootNamespace>
+    <AssemblyName>WebScraping.Cmd</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.8.11.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.11\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WikipediaWebScraper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WikipediaWebScraperEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\wikipedia\Links\Ada_Lovelace" />
+    <None Include="Data\wikipedia\Links\Aesthetics" />
+    <None Include="Data\wikipedia\Links\Ai" />
+    <None Include="Data\wikipedia\Links\AI-complete" />
+    <None Include="Data\wikipedia\Links\Alan_Turing" />
+    <None Include="Data\wikipedia\Links\Algorithm" />
+    <None Include="Data\wikipedia\Links\Alternate_history" />
+    <None Include="Data\wikipedia\Links\Analysis_of_algorithms" />
+    <None Include="Data\wikipedia\Links\Android_%28robot%29" />
+    <None Include="Data\wikipedia\Links\APL_%28programming_language%29" />
+    <None Include="Data\wikipedia\Links\Arcology" />
+    <None Include="Data\wikipedia\Links\Armageddon" />
+    <None Include="Data\wikipedia\Links\Artificial_intelligence" />
+    <None Include="Data\wikipedia\Links\Automated_theorem_proving" />
+    <None Include="Data\wikipedia\Links\A_Fire_Upon_the_Deep" />
+    <None Include="Data\wikipedia\Links\Baruch_Spinoza" />
+    <None Include="Data\wikipedia\Links\Bertrand_Russell" />
+    <None Include="Data\wikipedia\Links\Bioinformatics" />
+    <None Include="Data\wikipedia\Links\Biotechnology" />
+    <None Include="Data\wikipedia\Links\Blade_Runner" />
+    <None Include="Data\wikipedia\Links\Book_of_Revelation" />
+    <None Include="Data\wikipedia\Links\Boolean_satisfiability_problem" />
+    <None Include="Data\wikipedia\Links\Bootstrapping" />
+    <None Include="Data\wikipedia\Links\Brain" />
+    <None Include="Data\wikipedia\Links\Bubblegum_Crisis" />
+    <None Include="Data\wikipedia\Links\Buckminster_Fuller" />
+    <None Include="Data\wikipedia\Links\Carbon_nanotube" />
+    <None Include="Data\wikipedia\Links\Carl_Sagan" />
+    <None Include="Data\wikipedia\Links\Category_theory" />
+    <None Include="Data\wikipedia\Links\Chinese_room" />
+    <None Include="Data\wikipedia\Links\Chomsky_%28surname%29" />
+    <None Include="Data\wikipedia\Links\Christian_eschatology" />
+    <None Include="Data\wikipedia\Links\Chrono_Trigger" />
+    <None Include="Data\wikipedia\Links\Clarke%2527s_three_laws" />
+    <None Include="Data\wikipedia\Links\Claude_Shannon" />
+    <None Include="Data\wikipedia\Links\Cognitive_behavioral_therapy" />
+    <None Include="Data\wikipedia\Links\Cognitive_psychology" />
+    <None Include="Data\wikipedia\Links\Cognitive_science" />
+    <None Include="Data\wikipedia\Links\Combinatorics" />
+    <None Include="Data\wikipedia\Links\Computational_chemistry" />
+    <None Include="Data\wikipedia\Links\Computational_linguistics" />
+    <None Include="Data\wikipedia\Links\Computer_animation" />
+    <None Include="Data\wikipedia\Links\Computer_music" />
+    <None Include="Data\wikipedia\Links\Computer_programming" />
+    <None Include="Data\wikipedia\Links\Computer_science" />
+    <None Include="Data\wikipedia\Links\Computer_security" />
+    <None Include="Data\wikipedia\Links\Computer_vision" />
+    <None Include="Data\wikipedia\Links\Computing" />
+    <None Include="Data\wikipedia\Links\Concept" />
+    <None Include="Data\wikipedia\Links\Consciousness" />
+    <None Include="Data\wikipedia\Links\Continuum_mechanics" />
+    <None Include="Data\wikipedia\Links\Control_theory" />
+    <None Include="Data\wikipedia\Links\Cryonics" />
+    <None Include="Data\wikipedia\Links\Customer-relationship_management" />
+    <None Include="Data\wikipedia\Links\Cyberpunk" />
+    <None Include="Data\wikipedia\Links\Cyberspace" />
+    <None Include="Data\wikipedia\Links\Cyc" />
+    <None Include="Data\wikipedia\Links\Garbage_collection_%28computer_science%29" />
+    <None Include="Data\wikipedia\Links\List_of_artificial_intelligence_projects" />
+    <None Include="Data\wikipedia\Links\List_of_computer_scientists" />
+    <None Include="Data\wikipedia\Links\Outline_of_biology" />
+    <None Include="Data\wikipedia\Links\P_versus_NP_problem" />
+    <None Include="Data\wikipedia\Links\Rendering_%28computer_graphics%29" />
+    <None Include="Data\wikipedia\Words\Ada_Lovelace" />
+    <None Include="Data\wikipedia\Words\Aesthetics" />
+    <None Include="Data\wikipedia\Words\Ai" />
+    <None Include="Data\wikipedia\Words\AI-complete" />
+    <None Include="Data\wikipedia\Words\Alan_Turing" />
+    <None Include="Data\wikipedia\Words\Algorithm" />
+    <None Include="Data\wikipedia\Words\Alternate_history" />
+    <None Include="Data\wikipedia\Words\Analysis_of_algorithms" />
+    <None Include="Data\wikipedia\Words\Android_%28robot%29" />
+    <None Include="Data\wikipedia\Words\APL_%28programming_language%29" />
+    <None Include="Data\wikipedia\Words\Arcology" />
+    <None Include="Data\wikipedia\Words\Armageddon" />
+    <None Include="Data\wikipedia\Words\Artificial_intelligence" />
+    <None Include="Data\wikipedia\Words\Automated_theorem_proving" />
+    <None Include="Data\wikipedia\Words\A_Fire_Upon_the_Deep" />
+    <None Include="Data\wikipedia\Words\Baruch_Spinoza" />
+    <None Include="Data\wikipedia\Words\Bertrand_Russell" />
+    <None Include="Data\wikipedia\Words\Bioinformatics" />
+    <None Include="Data\wikipedia\Words\Biotechnology" />
+    <None Include="Data\wikipedia\Words\Blade_Runner" />
+    <None Include="Data\wikipedia\Words\Book_of_Revelation" />
+    <None Include="Data\wikipedia\Words\Boolean_satisfiability_problem" />
+    <None Include="Data\wikipedia\Words\Bootstrapping" />
+    <None Include="Data\wikipedia\Words\Brain" />
+    <None Include="Data\wikipedia\Words\Bubblegum_Crisis" />
+    <None Include="Data\wikipedia\Words\Buckminster_Fuller" />
+    <None Include="Data\wikipedia\Words\Carbon_nanotube" />
+    <None Include="Data\wikipedia\Words\Carl_Sagan" />
+    <None Include="Data\wikipedia\Words\Category_theory" />
+    <None Include="Data\wikipedia\Words\Chinese_room" />
+    <None Include="Data\wikipedia\Words\Chomsky_%28surname%29" />
+    <None Include="Data\wikipedia\Words\Christian_eschatology" />
+    <None Include="Data\wikipedia\Words\Chrono_Trigger" />
+    <None Include="Data\wikipedia\Words\Clarke%2527s_three_laws" />
+    <None Include="Data\wikipedia\Words\Claude_Shannon" />
+    <None Include="Data\wikipedia\Words\Cognitive_behavioral_therapy" />
+    <None Include="Data\wikipedia\Words\Cognitive_psychology" />
+    <None Include="Data\wikipedia\Words\Cognitive_science" />
+    <None Include="Data\wikipedia\Words\Combinatorics" />
+    <None Include="Data\wikipedia\Words\Computational_chemistry" />
+    <None Include="Data\wikipedia\Words\Computational_linguistics" />
+    <None Include="Data\wikipedia\Words\Computer_animation" />
+    <None Include="Data\wikipedia\Words\Computer_music" />
+    <None Include="Data\wikipedia\Words\Computer_programming" />
+    <None Include="Data\wikipedia\Words\Computer_science" />
+    <None Include="Data\wikipedia\Words\Computer_security" />
+    <None Include="Data\wikipedia\Words\Computer_vision" />
+    <None Include="Data\wikipedia\Words\Computing" />
+    <None Include="Data\wikipedia\Words\Concept" />
+    <None Include="Data\wikipedia\Words\Consciousness" />
+    <None Include="Data\wikipedia\Words\Continuum_mechanics" />
+    <None Include="Data\wikipedia\Words\Control_theory" />
+    <None Include="Data\wikipedia\Words\Cryonics" />
+    <None Include="Data\wikipedia\Words\Customer-relationship_management" />
+    <None Include="Data\wikipedia\Words\Cyberpunk" />
+    <None Include="Data\wikipedia\Words\Cyberspace" />
+    <None Include="Data\wikipedia\Words\Cyc" />
+    <None Include="Data\wikipedia\Words\Garbage_collection_%28computer_science%29" />
+    <None Include="Data\wikipedia\Words\List_of_artificial_intelligence_projects" />
+    <None Include="Data\wikipedia\Words\List_of_computer_scientists" />
+    <None Include="Data\wikipedia\Words\Outline_of_biology" />
+    <None Include="Data\wikipedia\Words\P_versus_NP_problem" />
+    <None Include="Data\wikipedia\Words\Rendering_%28computer_graphics%29" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
